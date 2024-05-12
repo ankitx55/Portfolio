@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    /* Colors */
+    --primary-color: #ffcd42;
+    --secondary-color: #ffd35c;
+    --bg-primary: #ffffff;
+    --text-color: #222222;
+    --text-color-two: #ffffff;
+    --bg-secondary: #000000;
+    --card-background: #f4f4f4;
+    --bg-secondary-two: #111111;
+  
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  
+    /* Font Weight */
+    --weight-small: 400;
+    --weight-semibold: 600;
+    --weight-bold: 800;
+  
+    /* Max width */
+    --width-small: 600px;
+    --width-medium: 1100px;
+    --width-large: 1300px;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #ffcd42;
+    --secondary-color: #ffd35c;
+    --bg-primary: #000000;
+    --text-color: #ffffff;
+    --text-color-two: #dddddd;
+    --bg-secondary: #ffffff;
+    --card-background: #111111;
+    --bg-secondary-two: #f4f4f4;
+    --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
+  }
+
+
+
+
+#link1{
+    color:#dad39dd5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: var(--bg-primary); /* White background */
+  color: var(--text-color); /* Dark text */
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: var(--text-color); /* Dark text */
+}
+
+header {
+  background-color: var(--bg-primary); /* White background for header */
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: var(--text-color); /* Dark text */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--text-color); /* Dark text */
+}
+
+.experience {
+  padding: 0 20px;
+}
+
+.experience h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text-color); /* Dark text */
+}
+
+.experience ul {
+  margin-left: 20px;
+}
+
+.experience ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  min-height: 160px;
+  text-align: center;
+  padding: 20px;
+}
+.social-icons a {
+    color: var(--text-color);
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: var(--primary-color); /* Change color on hover */
+  }
+  
+
+.projects {
+  display: flex; /* Use flexbox to align projects horizontally */
+  justify-content: space-around; /* Horizontally distribute space between projects */
+  flex-wrap: wrap; /* Allow projects to wrap to the next line if there's not enough space */
+}
+
+.project {
+  flex: 0 0 calc(30% - 20px); /* Adjust width of each project card */
+  margin: 10px; /* Add margin between project cards */
+  padding: 20px; /* Add padding inside project cards */
+  background-color: var(--bg-secondary); /* Light yellow background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to project cards */
+  color: var(--text-color-two); /* White text */
+}
+
+.project h3{
+    color:#dddddd;
+}
+.project a{
+    color:#dddddd;
+}
+
+
+/* :root {
+    --primary-color: #ffcd42;
+    --secondary-color: #ffd35c;
+    --bg-primary: #ffffff;
+    --text-color: #222222;
+    --text-color-two: #ffffff;
+    --bg-secondary: #000000;
+    --card-background: #f4f4f4;
+    --bg-secondary-two: #111111;
+  [data-theme="dark"] {
+    --primary-color: #ffcd42;
+    --secondary-color: #ffd35c;
+    --bg-primary: #000000;
+    --text-color: #ffffff;
+    --text-color-two: #dddddd;
+    --bg-secondary: #ffffff;
+    --card-background: #111111;
+    --bg-secondary-two: #f4f4f4;
+    --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
+  }
+} */
+
+
+@media (max-width: 768px) {
+  .project {
+    flex: 0 1 calc(45% - 20px); /* Adjust width of each project card for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .project {
+    flex: 0 1 calc(100% - 20px); /* Adjust width of each project card for smaller screens */
+  }
+}
