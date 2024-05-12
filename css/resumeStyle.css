@@ -141,6 +141,33 @@ footer {
     color: var(--primary-color); /* Change color on hover */
   }
   
+  #footer a {
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  
+  #footer a:hover {
+    opacity: 0.6;
+  }
+  #footer .social {
+    margin: 0.9rem 0;
+  }
+  
+  #footer .social img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #footer .social a {
+    margin: 0 0.5rem;
+  }
+  
+  #footer p {
+    font-size: 0.8rem;
+  }
+  
+
+
 
 .projects {
   display: flex; /* Use flexbox to align projects horizontally */
