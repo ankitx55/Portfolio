@@ -6,6 +6,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
+
 /* variables */
 :root {
   /* Colors */
@@ -74,13 +75,13 @@ body {
 
 /* Navbar */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-  background: var(--bg-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
+
 
 .navbar .container {
   display: flex;
@@ -255,9 +256,32 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 768px) {
+  .header-container {
+      padding: 1rem;
+  }
+
+  .profile-image {
+      width: 120px;
+      height: 120px;
+  }
+
+  .content-text h1 {
+      font-size: 1.5rem;
+  }
 }
+
+@media (max-width: 480px) {
+  .profile-image {
+      width: 100px;
+      height: 100px;
+  }
+
+  .content-text h1 {
+      font-size: 1.2rem;
+  }
+}
+
 
 @media (max-width: 670px) {
   .navbar .nav-menu {
@@ -332,3 +356,35 @@ body {
     width: 80%;
   }
 }
+
+
+
+
+
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px; /* Adjust based on your design */
+  height: 150px; /* Adjust based on your design */
+}
+
+#logo img {
+  max-width: 100%; /* Make sure logo scales well */
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+

@@ -18,6 +18,13 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
+
+const themeSwitch = document.getElementById('switch');
+themeSwitch.addEventListener('change', function() {
+    document.body.classList.toggle('dark-theme', themeSwitch.checked);
+});
+
+
 // Event Listeners: Handling toggle event
 const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
